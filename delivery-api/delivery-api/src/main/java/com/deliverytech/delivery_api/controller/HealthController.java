@@ -30,7 +30,7 @@ public class HealthController {
             "service", "Delivery API AGOSTO",
             "javaVersion", System.getProperty("java.version"),
             "springBootVersion", getClass().getPackage().getImplementationVersion() != null
-                ? getClass().getPackage().getImplementationVersion() : "4.11.x",
+                ? getClass().getPackage().getImplementationVersion() : "4.1.x",
             "environment", "development"
         );
  
@@ -48,7 +48,7 @@ public class HealthController {
             "1.0.0",
             "Giovana Pavarina ",
             System.getProperty("java.version"),
-            "Spring Boot 4.11.x",
+            "Spring Boot 4.1.x",
             LocalDateTime.now().format(FORMATTER),
             "Sistema de delivery moderno desenvolvido com as mais recentes tecnologias Java"
         );
