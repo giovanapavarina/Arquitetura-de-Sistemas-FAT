@@ -51,9 +51,10 @@ INSERT INTO produto (nome, descricao, preco, categoria, disponivel, restaurante_
 
 -- ============================================================
 --  PEDIDOS
---  Valores da coluna status devem bater com os nomes do enum StatusPedido.
+--  Valores de status_pedido devem bater com os nomes do enum.
+--  Ajuste se seu StatusPedido tiver outros valores.
 -- ============================================================
-INSERT INTO pedido (numero_pedido, data_pedido, entrega, subtotal, taxa_entrega, valor_total, status, cliente_id, restaurante_id) VALUES
+INSERT INTO pedido (numero_pedido, data_pedido, entrega, subtotal, taxa_entrega, valor_total, status_pedido, cliente_id, restaurante_id) VALUES
 ('PED-0001', '2026-10-20 12:15:00', TRUE, 32.90, 6.50, 39.40,  'ENTREGUE',   1, 1),
 ('PED-0002', '2026-10-20 19:40:00', TRUE, 93.00, 8.00, 101.00, 'ENTREGUE',   2, 2),
 ('PED-0003', '2026-10-21 11:05:00', TRUE, 89.90, 12.00, 101.90,'ENTREGUE',   3, 3),
